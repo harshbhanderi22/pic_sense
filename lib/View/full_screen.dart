@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_wallpaper_manager/flutter_wallpaper_manager.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:pexel/Service/Providers/permission_handle.dart';
-
+import 'package:pexel/Service/Providers/download_handler.dart';
+ 
 class FullViewPhoto extends StatefulWidget {
   final String photoUrl;
 
