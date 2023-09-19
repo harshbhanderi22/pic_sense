@@ -71,6 +71,7 @@ class PhotoLoadProvider with ChangeNotifier {
   }
 
   Future<void> getExtraImages() async {
+     getImages();
     //setFetcing(true);
     Fluttertoast.showToast(msg: "Wait!! We Are Adding Images");
     try {
@@ -92,6 +93,7 @@ class PhotoLoadProvider with ChangeNotifier {
 
   Future<void> getSearchedImage(String word) async {
     //setFetcing(true);
+     getImages();
     Fluttertoast.showToast(msg: "Wait!! We Are Searching Images");
     try {
       //print("In try block");
@@ -117,6 +119,7 @@ class PhotoLoadProvider with ChangeNotifier {
 
   Future<void> getExtraSearchImages(String word) async {
     //setFetcing(true);
+     getImages();
     Fluttertoast.showToast(msg: "Wait!! We Are Adding Images");
     try {
       //print("In try block");
